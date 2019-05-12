@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head lang="en-IE">
+	<meta charset="utf-8">	
+	<title>HTML5 Video Voice Control with the Web Speech API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/video.css" rel="stylesheet" media="all">
+</head>
+<body>
+
+
+<div class="header_container">
+
+  <div class="header_left">
+    <div class="phone_container">
+      <img src="img/phone.png">
+      <span>000 123 456 789</span>
+    </div>
+    <div class="message_container">
+      <img src="img/message.png">
+      <span>alisa.utlik@gmail.com</span>
+    </div>
+  </div>
+  <div class="header_right">
+     <div class="logo">
+    <span class="blue_logo">Color</span>
+    <span class="red_logo">Changer</span>
+  </div>
+    
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="miniMenu">
+
+<nav>
+  <a href="vk.com" data-word="homepage">Homepage</a>
+  <a href="https://github.com/alisa98?tab=repositories" data-word="color">Color</a>
+  <a href="portfolio" data-word="login">Login</a>
+  <a href="contact" data-word="text">Text</a>
+</nav>
+
+<p>Latest word the API thinks you just said: 
+	<strong id="latest-word"></strong>
+</p>
+	
+</div>	
+
+	<main role="main">
+		<h1><abbr title="HyperText Markup Language 5">HTML5</abbr> Video Voice Control with the Web Speech <abbr title="Application Programming Interface">API</abbr></h1>
+		<video id="v" controls preload="metadata">
+			<source src="video/big-buck-bunny.mp4" type="video/mp4">
+		</video>
+		<div class="rec-status">Recogniser status:<span id="recStatus">not recognising</span></div>
+		<button id="startRecBtn">Start Recognition</button>
+		<button id="stopRecBtn">Stop Recognition</button>
+		<p>Click "Start Recognition", give microphone access permission and start controlling the video's playback, mute and volume control via speech.<br>Available commands are:</p>
+		<ul>
+			<li id="vidPlay">"video play"</li>
+			<li id="vidStop">"video stop"</li>
+			<li id="vidReplay">"video replay"</li>
+			<li id="vidVolOn">"video volume on"</li>
+			<li id="vidVolOff">"video volume off"</li>
+			<li id="vidVolInc">"video volume increase"</li>
+			<li id="vidVolDec">"video volume decrease"</li>
+		</ul>
+	</main>
+
+	<script src="js/video.js" defer></script>
+	<script>
+		var _gaq=[['_setAccount','UA-2046650-1'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	</script>
+	
+	<div class="footer_container">
+  <hr>
+  <div class="footer">
+    <div class="footer_left">
+      <span> 2019 </span>
+    </div>
+    <div class="footer_right">
+      <a href=""><img src="img/email.png"></a>
+      <a href=""><img src="img/twitter.png"></a>
+      <a href=""><img src="img/instagram.png"></a>
+      <a href=""><img src="img/telegram.png"></a>
+    </div>
+  </div>
+</div>
+      <script src="js/color.js"></script>
+</body>
+</html>
+</body>
+</html>
